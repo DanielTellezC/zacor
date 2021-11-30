@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index,js"
+    "start": "node routes/src/index.js",
+    "dev": "nodemon routes/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,15 @@
   },
   "homepage": "https://github.com/DanielTellezC/zacor#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.13"
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
