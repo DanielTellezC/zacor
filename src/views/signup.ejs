@@ -1,0 +1,8 @@
+<% if (signupMessage) { %>
+    <div><%= signupMessage %></div>
+<% } %>
+<form action="/signup" method="post">
+    <input type="email" name="email" placeholder="Inserta el imael">
+    <input type="password" name="password" placeholder="Contraseña">
+    <button type="submit">Ingresar</button>
+</form>
