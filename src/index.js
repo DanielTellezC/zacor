@@ -7,6 +7,12 @@ const session = require('express-session');
 const flash = require('connect-flash');
 
 const app = express();
+
+
+app.use(express.static(__dirname + '/public'));
+//app.use('/css', express.static(__dirname +'public/css'));
+//app.use('/img', express.static(__dirname +'public/img'));
+
 require('./passport/local-auth');
 require('./database');
 
@@ -34,7 +40,6 @@ app.use((req, res, next) => {
 })
 //Routes
 app.use('/',require('./routes/index'));
-
 
 
 //inicio del servidor
