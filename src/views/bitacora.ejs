@@ -1,0 +1,24 @@
+<%- include('layouts/main.ejs'); %>
+<div class="container pt-4 text-justifi" style="text-align: justify;">
+    <h2>Para Zacor es muy importante que hagas una bitacora de lo relizado día con dia, 
+        así que realiza una al terminar alguna tarea importante y que todo se pueda mantener 
+        el orden en la empresa</h2>
+</div>
+<div class="container pt-4">
+    <h5>Inicia bitacora del dia de hoy</h5>
+    <form action="/bitacora" method="post">
+        <textarea name="hechos" id="" cols="110" rows="10"></textarea>
+        <h5>Ingresa la fecha</h5>
+        <input class="mb-4" name="fecha" type="datetime-local">
+        <br>
+        <button class="btn btn-primary text-center" type="submit">guardar bitacora</button>
+    </form>
+</div>
+<hr color = "blue" size = 3>
+<div class="container pt-4">
+    <h5>Bitacoras Hechas</h5>
+</div>
+
+
+
+<%- include('layouts/footer.ejs'); %>

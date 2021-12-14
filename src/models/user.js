@@ -4,7 +4,12 @@ const { Schema } = mongoose;
 
 const userSchema = new Schema({
     email: String,
-    password: String
+    password: String,
+    rollos:[{
+        type: Schema.Types.ObjectId,
+        ref: 'rollos'
+    }]
+
 });
 
 userSchema.methods.encryptPassword = (password) => {
