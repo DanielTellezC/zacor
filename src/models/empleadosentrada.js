@@ -2,11 +2,8 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
 const { Schema } = mongoose;
 
-const empleado = new Schema({
-    nombre: String,
-    horaentrada: String,
-    horasalida: String,
-    fecha: String,
+const empleadoentrada = new Schema({
+    fecha: { type: Date, default: Date.now },
     cuenta: [{
         type: Schema.Types.ObjectId,
         ref: 'users'
@@ -14,4 +11,4 @@ const empleado = new Schema({
     
 });
 
-module.exports = mongoose.model('empleado', empleado);
+module.exports = mongoose.model('empleadoentrada', empleadoentrada);

@@ -7,7 +7,7 @@
 <div class="container pt-4">
     <h5>Inicia bitacora del dia de hoy</h5>
     <form action="/bitacora" method="post">
-        <textarea name="hechos" id="" cols="110" rows="10"></textarea>
+        <textarea class="form-control" name="hechos" id="" cols="110"  rows="10"></textarea>
         <h5>Ingresa la fecha</h5>
         <input class="mb-4" name="fecha" type="datetime-local">
         <br>
@@ -17,6 +17,15 @@
 <hr color = "blue" size = 3>
 <div class="container pt-4">
     <h5>Bitacoras Hechas</h5>
+    <% bitacoraN.forEach(function(bitacora){%>
+    <p>
+        <%=bitacora.hechos%>
+    </p>
+    <h6>
+        <%=bitacora.fecha%>
+    </h6>
+    <hr color = "blue" size = 3>
+    <%});%>
 </div>
 
 

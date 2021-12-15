@@ -1,5 +1,32 @@
-<%- layout('layouts/main.ejs') %>
-<h1>zacor
-
-</h1>
-<%- layout('layouts/footer.ejs') %>
+<%- include('layouts/main.ejs') %>
+<div class="">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/imagen1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/imagen2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/imagen3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container text-center pt-5">
+        <h2>Viste a la moda con Zacor</h2>
+        <p class="pt-6 fs-3" style="text-align: justify;">
+            encuentra lo ultimo en moda en jeans, camisas, playeras, sudaderas, y mucho más en nuestras sucursales
+        </p>
+        
+      </div>
+</div>
+<%- include('layouts/footer.ejs') %>
